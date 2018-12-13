@@ -1,0 +1,206 @@
+
+/*中间商品详情*/
+.details{
+	width: 100%;
+	border-top:2px solid #eeeeee ;
+}
+.details .goodsTit{
+	width: 1000px;
+	margin: 0 auto;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 2px solid #dfdfdf;
+}
+.goodsTit a{
+	font-size: 12px;
+	color:#666666;
+}
+.goodsTit a:last-child{
+	color:#f10180;
+}
+.price{
+	width: 1000px;
+	margin: 0 auto;
+	background: #f5f5f5;
+	border-bottom: 1px solid #dfdfdf;
+	margin-top: 15px;
+}
+.price a{
+	font-size: 13px;
+	color: #333;
+	display: inline-block;
+	line-height: 48px;
+	height: 48px;
+	padding:0 20px;
+	border-right: 1px solid #dfdfdf;
+}
+.price a:first-child{
+	border: 1px solid #f10180;
+	color: #f10180;
+	background: white;
+}
+.price a:hover{
+	color:#f10180;
+}
+.price .checkA{
+	border: none;
+	padding: 0 8px;
+}
+.price .txt{
+	width: 50px;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 5px;
+	margin-left: 10px;
+}
+.price .t{
+	margin: 0;
+}
+.price .check{
+	width: 23px;
+	height: 19px;
+	background: white;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+.price_right{
+	float: right;
+	height: 48px;
+	line-height: 48px;	
+	margin-right: 10px;
+}
+.price .price_right a:hover{
+	border: none;
+	color:#f10180;
+}
+.price_right input{
+	padding: 0 8px;
+	height: 28px;
+	outline: none;
+	border: 1px solid #b8b8b8;
+	background: white;
+}
+.price_right span:first-child{
+	color: #f10180;
+}
+
+.goods_content{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.goods_content:after{
+	content:" ";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.goods_content a{
+	color: black;
+	float: left;
+}
+.goodsBox{
+	padding: 8px;
+	position: relative;
+	min-height: 394px;
+	margin-bottom: 20px;
+}
+.goodsBox .clothesPic{
+	width: 234px;
+	height: 297px;
+	display: block;
+}
+.discount{
+	color: white;
+	height: 33px;
+	line-height: 33px;
+	text-indent: 5px;
+	font-size: 14px;
+	background: linear-gradient(to right,#f10180 60%,#fe3b07 100%);
+}
+.discount span{
+	font-size: 26px;
+}
+.money span:first-child{
+	color: #f10180;
+	font-size: 24px;
+}
+.money span:nth-child(2){
+	color: #999;
+	font-size: 10px;
+	text-decoration: line-through;
+	margin-left: 10px;
+}
+.money span:last-child{
+	float: right;
+	color: #f1b13b;
+	border: 1px solid #f1b13b;
+	border-radius: 2px;
+	font-size:12px;
+	margin-top: 7px;
+}
+.description{
+	font-size: 13px;
+	float: left;
+}
+
+.zhezhao{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid #ded7d7;
+	width: 300px;
+	height: 100%;
+	padding: 8px;
+	display: none;
+		z-index: 2;
+}
+.floatBox{
+	float: right;
+
+}
+.floatBox img{
+	width: 54px;
+	height: 68px;
+	display: block;
+	margin-bottom: 8px;
+	box-sizing: border-box;
+}
+.goodsBox:hover .zhezhao{
+	display: block;
+}
+.floatBox img:hover{
+	border: 1px  solid red;
+}
+
+/*goods_foot*/
+.goods_foot{
+	width: 1000px;
+	margin: 20px auto;
+	text-align: center;
+}
+.goods_foot a{
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	margin: 0 3px;
+	border: 1px solid #c8c8c8;
+	border-radius: 3px;
+	color: #333;
+	line-height: 44px;
+}
+.goods_foot a:first-of-type{
+	color: white;
+	background: #f10180;
+	border: 1px solid #f10180;
+}
+.goods_foot span:first-of-type{
+	margin-right: 25px;
+}
+.goods_foot a:hover{
+	background:white;
+	border-color:#f10180;
+	color:#f10180
+}

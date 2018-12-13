@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/shoppingcar.css" />
+	</head>
+	<body>
+		<!--状态栏-->
+		<header>
+			<ul class="navList">
+				<li class="navitem area"><a>陕西<span></span></a></li>
+				<li class="navitem area"><a>西安<span></span></a></li>
+				<li class="navitem"><a>更多</a></li>
+				<li class="navitem"><a>手机版</a><span>/</span></li>
+				<li class="navitem"><a>客户服务</a><span>/</span></li>
+				<li class="navitem"><a>会员俱乐部</a><span>/</span></li>
+				<li class="navitem"><a>我的收藏</a><span>/</span></li>
+				<li class="navitem"><a>我的订单</a><span>/</span></li>
+				<li class="navitem"><a href="register.html">注册</a><span>/</span></li>
+				<li class="navitem" id="loginBox"><a href="login.html">请登录</a><span>/</span></li>
+				<li class="navitem" id="welcome">欢迎您：<span id="userSpan"></span><input type="button" id="btnOut" value="注销"/></li>
+			</ul>
+		</header>
+		
+		<!--标题图片行-->
+		<div class="header">
+			<a href="#" class="logo"><img src="img/logo.gif" /></a>
+			<a href="#"><img src="img/sendBack.png"/></a>
+			<a href="#"><img src="img/7days.png"/></a>
+			<a href="#"><img src="img/100good.png"/></a>
+			<div class="search">
+				<input type="text" placeholder="试试搜索商品、分类和品牌"/>
+				<a href="#"><img src="img/search.jpg"/></a>
+			</div>
+		</div>
+		
+		<!--无商品部分-->
+		<div class="centerContent">
+			<div class="specialSell">
+				<h3 class="special1">特卖商品</h3>
+				<span></span>
+				<h3 class="special2">唯品医药</h3>
+			</div>
+			
+			<div class="shoppingBox">
+				<span></span>
+				<div class="shopping">
+					<p>购物袋空空如也,</p>
+					<p>快去抢购心仪物品吧~</p>
+					<p>
+						<a href="#" class="a1">立即抢购</a>
+						<a href="#" class="a2">查看订单</a>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--有商品部分-->
+		<table border="1px solid #000" id="t" >
+		<tr height="40" style="background: #e9e5e5;">
+			<td width="400" align="left" style="color:#f3168a;text-indent: 15px;">精选特卖</td>
+			<td>单价</td>
+			<td>数量</td>
+			<td>小计</td>
+			<td>操作</td>
+		</tr>
+		
+		<tr height="100">
+			<!--商品信息-->
+			<td align="left">
+				<img src="img/goods2.jpg" width="50px" height="60px" style="margin:0 15px;display: inline-block;"/>
+				<div id="goodsInfo">
+					<div id="goodsName">2018冬季纯色双面呢男装羊毛大衣西装领毛呢大衣男商务休闲男装毛呢大衣男士大衣</div>尺码：
+					<span id="goodsSize">M</span>
+				</div>
+			</td>
+			
+			<!--单价-->
+			<td>599</td>
+			
+			<!--数量-->
+			<td>
+				<input class="reduceCls" type="button" style="padding: 0 5px;" value="-" />
+				<span id="spanIdTwo" style="padding-right: 5px;padding-left: 10px;">1</span>
+				<input class="addcls" type="button" style="padding: 0 5px;" value="+" />
+			</td>
+			
+			<!--小计-->
+			<td>
+				599
+			</td>
+			<!--操作-->
+			<td>
+				<span id="delete" style="cursor: pointer;">
+					删除
+				</span>
+			</td>
+		</tr>
+		<tr style="height: 70px;">
+			<td colspan="5" style="text-align: center;">总金额：$<span id="spanTotalMoney">599</span></td>				
+		
+		</tr>
+		<tr style="height: 70px;">		
+			<td colspan="5" style="text-align: center;">
+				<div id="jiesuan">立即结算</div>
+			</td>
+		</tr>
+	</table>
+
+		
+		
+		<!--footer-->
+		<footer>
+			<div class="footer_pink">
+				<a href="#">关于我们</a>|
+				<a href="#">About us </a>|
+				<a href="#"> Investor Relations</a>|
+				<a href="#">媒体报道</a>|
+				<a href="#">品牌招商</a>|
+				<a href="#">隐私条款</a>|
+				<a href="#">唯品诚聘</a>|
+				<a href="#">唯品卡</a>|
+				<a href="#">联系我们</a>|
+			</div>
+			<div class="footerA">
+				Copyright © 2008-2018 vip.com，All Rights Reserved&nbsp;&nbsp;  使用本网站即表示接受
+				<a href="#">唯品会用户协议</a>。版权所有&nbsp;&nbsp;
+				<a href="#"> 广州唯品会电子商务有限公司</a><br/>
+				<a href="#"><img src="img/police_icon.png"/>粤公网安备 44010302111111号</a>
+				<a href="#"> 粤ICP备08114786号</a>
+				<a href="#"> 增值业务经营许可证：粤B2-20170777</a>
+				<a href="#">网络文化经营许可证：粤网文〔2018〕5030-1743号</a><br/>
+				<a href="#">自营主体经营证照</a>
+				<a href="#">风险监测信息</a>
+				<a href="#"> 互联网药品交易服务资格证（粤C20140002）</a>
+			</div>
+			<div class="footerP"></div>
+		</footer>
+	</body>
+</html>
+
+<script src="js/cookieTools.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript" ></script>

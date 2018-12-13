@@ -1,0 +1,225 @@
+
+.highlight{
+	background-color: deeppink;
+}
+/*轮播图*/
+.banner{
+	height: 450px;
+	width: 100%;
+	background: url(../img/bannerBg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.banner #imageBox{
+	width: 960px;
+	height: 360px;
+	background: rgba(255,255,255,0.9);
+	position: relative;
+	top: 30px;
+	margin: 0 auto;
+	border-bottom:2px solid #e9e9e9;
+}
+
+/*每日必看专区*/
+section{
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+section p{
+	margin-bottom:15px ;
+}
+section p img{
+	width: 1000px;
+}
+
+.section_center img{
+	margin-right: 20px;
+	width: 208px;
+	height: 200px;
+}
+.rightImg{
+	float: right;
+	width: 300px;
+}
+.rightImg img{
+	display: block;
+	width: 300px;
+	height: 87px;
+	margin-bottom: 24px;
+	margin-right: 0;
+}
+
+/*早10晚8*/
+.bigBox{
+	width: 100%;
+/*	position: relative;*/
+}
+/*左侧导航*/
+.navLeft{
+	width: 58px;
+	position: fixed;
+	text-align: center;
+	top: 50px;
+	left: 4%;
+	border: 1px solid #d6d6d6;
+	border-radius: 5px;
+	padding:10px 8px;
+	display: none;
+}
+.navLeft li{
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 1px solid #eaeaea;
+}
+.navLeft li:first-child{
+	background: #f10180;
+	border-radius: 6px;
+}
+.navLeft li:first-child a{
+	color: white;
+}
+.navLeft a{
+	color:#666;
+	font-size: 14px;
+}
+.navLeft a:hover{
+	color: #f10180;
+}
+.highlight{
+    background-color: #f10180;
+    border-radius: 6px;
+}
+/*品牌板块*/
+.newBrand{
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+.newBrand p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.newBrand p img{
+	width: 100%;
+}
+.brand_area{
+	overflow: hidden;
+}
+.brand_area .area_item:nth-child(2n){
+	margin-right: 20px;
+}
+.area_item{
+	float: left;
+	position:relative;
+	width: 490px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.area_item img{
+	width: 480px;
+	height: 235px;
+}
+.bgDiv{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: whitesmoke;
+	opacity: 0.7;
+	width: 100%;
+	height: 235px;
+	opacity: 0;
+	transition: all 1s;
+}
+.goodsCover{
+	position:absolute;
+	top: 16px;
+	left: 36px;
+	width: 85%;
+	height:85% ;
+	background: white;
+	text-align: center;
+	border-radius: 5px;
+	opacity: 0;
+	transition: all 1s;
+}
+.goodsCover a{
+	display: inline-block;
+	margin-top: 14px;
+	margin-right: 28px;
+	color: #333;
+}
+.goodsCover span{
+	display: block;
+}
+.goodsCover img{
+	width: 82px;
+	height: 105px;
+	
+}
+.goodsBot{
+	padding-left: 20px;
+	padding-top: 10px;
+	border-top: 1px dotted black;
+	margin-top: 10px;
+	
+}
+.goodsBot a{
+	width: 100px;
+	height: 32px;
+	line-height: 30px;
+	margin: 0;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+.goodsBot a:first-child img{
+	width:74px;
+	height: 28px;
+	
+}
+.goodsBot a:nth-child(2) img{
+	width: 16px;
+	height: 14px;
+	margin-right: 5px;
+}
+.goodsBot a:nth-child(2){
+	border: 1px solid #ededed;
+	border-radius: 32px;
+}
+.goodsBot a:last-child{
+	width: 140px;
+	height: 28px;
+	border:1px solid #191919;
+	padding: 0;
+	border-radius: 3px;
+}
+.area_item:hover .bgDiv{
+	opacity: 0.6;
+}
+
+.area_item:hover .goodsCover{
+	opacity: 1;
+}
+.goodsBot a:last-child:hover{
+	background: #333;
+	color: white;
+}
+
+/*热销活动板块*/
+.brand_area .area_title{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 50px;
+	border-bottom: 1px solid black;
+}
+.brand_area .area_title img{
+	width: 203px;
+	height: 43px;
+	float: left;
+}
+
+
+
+

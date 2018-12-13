@@ -1,0 +1,266 @@
+
+/*中间商品详情*/
+.centerBox{
+	width: 1000px;
+	margin:0 auto;
+}
+.title{
+	margin: 10px 0;
+	font-size: 14px;
+}
+.title a{
+	color: #333;
+	font-size: 14px;
+}
+.title a:hover{
+	color: #F10180;
+}
+
+/*contentBox*/
+.contentBox{
+	overflow: hidden;
+	min-height: 700px;
+}
+.con_left{
+	float: left;
+}
+.con_left #picBox{
+	width: 390px;
+	height: 420px;
+	background-image: url(../img/clothes2.jpg);
+	background-size: cover;
+	position: relative;
+}
+#mirrorBox{
+	width: 80px;
+	height: 80px;
+	background: #fbd8d8;
+	position: absolute;
+	display: none;
+	opacity: 0.5;
+}
+#showBox{
+	width: 380px;
+	height: 420px;
+	position: absolute;
+	top: 0;
+	left: 400px;
+	display: none;
+	z-index: 998;
+	background-repeat: no-repeat;
+	background-image: url(../img/clothes2.jpg);;
+}
+.smallPic{
+	margin-top: 15px;
+	overflow: hidden;
+}
+.smallPic .small{
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+}
+.small:hover{
+	border: 1px solid #f10180;
+}
+.smallPic .small img{
+	width: 68px;
+	height: 68px;
+}
+.smallPic .small:last-child{
+	margin-right: 0;
+}
+
+.con_left .p1{
+	height: 46px;
+	line-height: 46px;
+	font-size: 12px;
+	color: #999999;
+	border-bottom: 1px #e2e2e2 dashed;
+}
+.con_left .p1 a{
+	color: #999999;
+	margin-left: 20px;
+}
+
+/*con_right*/
+.con_right{
+	float: right;
+	width: 56%;
+	padding-top: 15px;
+	font-size:12px
+}
+.con_right h3{
+	font-size: 17px;
+	margin: 12px 0;
+}
+.con_right .imgP img{
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+.con_right .priceP{
+	background: #faf5f8;
+	height: 80px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+.price{
+	float: left;
+	height: 80px;
+	line-height: 80px;
+}
+.price em{
+	color: #f43499;
+	font-size: 20px;
+	font-style: normal;
+}
+.price span{
+	color: #f43499;
+	font-size: 46px;
+}
+.dazhe{
+	width: 80px;
+	float: left;
+	padding-top: 24px;
+	margin-left: 10px;
+}
+.dazhe span{
+	display: block;
+}
+.dazhe span:first-child{
+	text-align: center;
+	border-radius:3px ;
+	font-size: 12px;
+	width: 40px;
+	height: 18px;
+	border: 1px solid #f43499;
+	color: #f43499;
+}
+.dazhe span:last-child{
+	font-size: 14px;
+	color: #999;
+	text-decoration: line-through;
+}
+.dl{
+	
+	overflow: hidden;
+	line-height: 32px;
+	margin-bottom: 8px;
+}
+.dl .dt{
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	font-size: 12px;
+	color: #999999;
+}
+.dl dd{
+	float: left;
+	width: 250px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #ccc;
+	position: relative;
+	margin-left: 15px;
+	padding-left: 10px;
+}
+.dl dd i{
+	position:absolute;
+	right: 15px;
+	font-size: 8px;
+}
+.dl .sp{
+	background: #f3b241;
+	height: 18px;
+	color: white;
+	padding: 0 3px;
+	margin-left: 15px;
+	margin-right: 18px;
+}
+.dl a{
+	display: block;
+	float: left;
+	margin-left: 14px;
+	border: 1px solid #ccc;
+}
+.dl a:hover{
+	border: 1px solid #f43499;
+}
+.dl a img{
+	width: 22px;
+	height: 29px;
+	margin-right:12px;
+	margin-left: 3px;
+	float: left;
+}
+.dl .color{
+	float: left;
+	height: 28px;
+	color: #333;
+	margin-right: 10px;
+}
+.dl a:first-of-type{
+	border: 2px solid #f43499;
+}
+.size{
+	display: inline-block;
+	width: 86px;
+	margin-bottom: 10px;
+	text-align: center;
+	margin-left: 15px;
+	border: 1px solid #cccccc;
+	cursor: pointer;
+}
+.size:hover{
+	border:1px solid #f43499;
+}
+.sizeBox{
+	width: 500px;
+	float: left;
+}
+.countBox{
+	border: 1px solid #b3b3b3;
+	/*width: 75px;
+	height: 28px;*/
+	float: left;
+	margin-left: 15px;
+}
+#add,#sub{
+	line-height: 28px;
+	float: left;
+	padding: 0 6px;
+	font-size: 20px;
+	color: #7d7c7c;
+	background: #f9f8f8;
+	height: 28px;
+	cursor: pointer;
+}
+#count{
+	text-align: center;
+	float: left;
+	width: 20px;
+	font-size: 14px;
+	background: white;
+	padding: 0 6px;
+	border-left: 1px solid #e4e3e3;
+	border-right: 1px solid #e4e3e3;
+	height: 28px;
+	line-height: 28px;
+}
+
+#joinCar{
+	width: 198px;
+	height: 48px;
+	background: #f10180;
+	text-align: center;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	margin-left: 39px;
+	margin-top: 20px;
+	border-radius:3px ;
+	position:absolute;
+}

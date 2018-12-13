@@ -1,0 +1,147 @@
+
+/*中间内容部分*/
+.centerContent{
+	width: 100%;
+	border-top: 2px solid #f3168a;
+}
+.specialSell{
+	width: 1000px;
+	margin: 20px auto 0;
+	border-bottom: 1px solid #dcd1d1;
+}
+.specialSell span{
+	height: 15px;
+	width: 1px;
+	border-right: 1px solid #dcd1d1;
+}
+.specialSell .special1{
+	font-size: 16px;
+	display: inline-block;
+	color: #f3168a;
+	padding: 8px 10px;
+	border-bottom: 2px solid #f3168a;
+}
+.specialSell .special2{
+	display: inline-block;
+	padding: 8px 10px;
+	font-size: 16px;
+	
+}
+.shoppingBox{
+	width: 1000px;
+	height: 200px;
+	margin: 40px auto 0;
+	text-align: center;
+}
+.shoppingBox span{
+	margin-right: 30px;
+	display: inline-block;
+	background-image: url(../img/background.png);
+    background-position: -164px 0;
+    width:120px;
+    height: 120px;
+}
+.shopping{
+	display: inline-block;
+	height: 120px;
+	vertical-align: top;
+	padding-top: 5px;
+}
+.shopping p{
+	text-align: left;
+}
+.shopping p:first-child{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.shopping p:nth-child(2){
+	margin-bottom: 18px;
+}
+.shopping p:last-child a{
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	padding:0 20px;
+	border-radius: 3px;
+	font-size: 14px;
+}
+.a1{
+	background:#f3168a;
+	color: white;
+	
+}
+.a2{
+	background:#f8f5f5;
+	border: 1px solid #cdc7c7;
+	color: black;
+}
+
+/*table*/
+table{
+	width: 1000px;
+	margin: 30px auto;
+	border-collapse: collapse;
+	table-layout: fixed;
+	text-align: center;
+	font-size: 16px;
+}
+#goodsInfo{
+	display: inline-block;
+	width: 280px;
+	
+}
+#goodsName{
+	color: #f3168a;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+#jiesuan{
+	display: inline-block;
+	width: 198px;
+	height: 48px;
+	line-height: 48px;
+	background: #f10180;
+	text-align: center;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	margin-left: 39px;
+	margin-top: 20px;
+	border-radius:3px;
+}
+
+/*footer*/
+footer{
+	width: 100%;
+	background: #fcfcfc;
+	border-top: 1px solid #ebebeb;
+}
+.footer_pink{
+	background:#f3168a;
+	width: 1000px;
+	margin: 30px auto 0;
+	text-align: center;
+	color: white;
+	height: 30px;
+	line-height: 30px;
+}
+.footer_pink a{
+	color: white;
+	font-size: 12px;
+	padding: 0 5px;
+}
+.footerA{
+	width: 1000px;
+	margin: 15px auto;
+	text-align: center;
+	color: #999;
+	font-size: 12px;
+}
+.footerA a{
+	color: grey;
+	font-size: 13px;
+}
+.footerA a:hover{
+	color: #f3168a;
+}

@@ -1,0 +1,304 @@
+body,div,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑",Arial;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+}
+
+/*导航栏*/
+header{
+	height: 30px;
+	background: rgb(245,245,245);
+}
+.navList{
+	width: 1000px;
+	/*height: 100%;*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+.navList .navitem{
+	float: right;
+	line-height: 30px;
+	font-size: 12px;
+	color: rgb(102,102,102);
+	/*当鼠标移动上来变小手*/
+	cursor: pointer;
+}
+.navList .navitem a{
+	padding: 0 16px;
+	color: rgb(102,102,102);
+}
+.navitem span{
+	font-size: 12px;
+	color: rgb(102,102,102);
+}
+.navitem a:hover{
+	color: pink;
+}
+.navList .area{
+	float: left;
+}
+.area a span{
+	width: 0;
+	height: 0;
+	border: 3px solid transparent;
+	border-top:3px solid black;
+	margin-left: 5px;
+	position: absolute;
+	top: 12px;
+}
+#welcome{
+	display: none;
+}
+
+/*   标题图片行  */
+.header{
+	width: 1000px;
+	height: 90px;
+	margin: 30px auto;
+}
+.header img{
+	height: 100%;
+	float: right;
+}
+.header .logo{
+	float: left;
+	width: 150px;
+	height: 100%;
+}
+
+.header .search{
+	position:relative;
+	width: 330px;
+    height: 32px;
+    top:29px;
+    left:200px;
+    border: 1px solid #fa2a83;
+    border-radius: 2px;
+}
+.search input{
+	position:absolute;
+	top: 0;
+	left: 0;
+	padding: 2px 12px;
+    width: 253px;
+    height: 28px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    border: none;
+    background-color: #fff;
+}
+.search a{
+	position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 6px;
+    width: 53px;
+    height: 26px;
+    background-color: #fa2a83;
+}
+.search a img{
+	padding-right: 15px;
+	width: 20px;
+	height: 22px;
+}
+
+
+/*导航栏*/
+.navBox{
+	width: 100%;
+	position:relative;
+	background: white;
+}
+nav{
+	width: 1030px;
+	margin: 0 auto;
+	height:44px;
+	line-height: 44px;
+	/*overflow: hidden;*/
+}
+
+nav a{
+	display: inline-block;
+	padding: 0px 16px;
+	color:#333;
+}
+nav a:hover{
+	color:#f10180;
+}
+nav a:hover .twolevel{
+	color: black;
+}
+.twolevel li:hover{
+	color:#f10180;
+}
+#goods{
+	width: 152px;
+	background: #f10180;
+	text-align: center;
+	line-height: 44px;
+	padding: 0;
+	position: relative;
+}
+.goodsMenu{
+	width: 100%;
+	font-size: 14px;
+	position: absolute;
+	z-index: 5;
+	background: #f10180;
+	color: white;
+	display: none;
+}
+.goodsMenu li:hover{
+	background: white;
+	color:#f10180;
+}
+.goodsDiv{
+	width:850px;
+	height: 440px;
+	background: white;
+	position:absolute;
+	top: 0;
+	left: 100%;
+	display: none;
+	color: white;
+	overflow: hidden;
+}
+
+.goodsLeft{
+	width: 70%;
+	height: 100%;
+	float: left;
+}
+.goodsLeft_p{
+	text-align: left;
+	overflow: hidden;
+	margin: 0 20px;
+	border-bottom: 1px solid #eeeeee;
+}
+.goodsLeft_p span{
+	font-size:14px;
+	color: #666666;
+}
+.goodsRight{
+	float: left;
+}
+#secondA{
+	color:#f10180;
+	font-weight: 600;
+	padding-left: 28px;
+	padding-right: 12px;
+}
+
+.sanjiao{
+	width: 0;
+	height: 0;
+	border: 3px solid transparent;
+	border-top:3px solid black;
+	position:absolute;
+	top: 20px;
+	right: 3px;
+}
+
+nav .imgGif{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+#more{
+	position: relative;
+	background: white;
+}
+.twolevel{
+	position: absolute;
+	top: 44px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	z-index: 99;
+	background: white;
+	display: none;
+}
+
+/*右侧的条目*/
+.navRight{
+	position: fixed;
+	width: 36px;
+	height: 100%;
+	right: 0;
+	top: 0;
+	background: rgb(38,38,38);
+	padding-top:58px ;
+	z-index: 99;
+	text-align: center;
+}
+.navRight i{
+	font-size: 22px;
+}
+.navRight a{
+	width: 100%;
+	display: block;
+	color: white;
+	margin: 10px 0;
+	position:absolute;
+}
+.navRight a:first-child{
+	position: absolute;
+	top: 5%;
+}
+.navRight a:nth-child(2){
+	position: absolute;
+	top: 13%;
+}
+.navRight a:nth-child(3){
+	position: absolute;
+	top: 37%;
+}
+.navRight a:nth-child(4){
+	position: absolute;
+	top: 45%;
+}
+.navRight a:nth-child(5){
+	position: absolute;
+	top: 53%;
+}
+.navRight a:nth-child(6){
+	position: absolute;
+	top: 71%;
+}
+.navRight a:nth-child(7){
+	position: absolute;
+	top: 75%;
+}
+.navRight a:last-child{
+	position: absolute;
+	top: 79%;
+}
+.navRight a:hover{
+	background: #df147f;
+}
+#shopping{
+	background: #f10180;
+	height: 120px;
+	padding: 20px 0;
+	position: absolute;
+}
+#shopping div{
+	margin:10px auto 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: white;
+	color: #f10180;
+	font-size: 14px;
+}
