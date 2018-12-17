@@ -1,0 +1,144 @@
+.banner {
+	width: 100%;
+	height: 360px;
+	background: rgba(255,255,255,0.9);
+	position: relative;
+	margin: 0 auto;
+	border-bottom:2px solid #e9e9e9;
+}
+
+/*早10晚8*/
+.bigBox{
+	width: 100%;
+/*	position: relative;*/
+}
+
+/*品牌板块*/
+.newBrand{
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+.newBrand p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.newBrand p img{
+	width: 100%;
+}
+.brand_area{
+	overflow: hidden;
+}
+.brand_area .area_item:nth-child(2n){
+	margin-right: 20px;
+}
+.area_item{
+	float: left;
+	position:relative;
+	width: 490px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.area_item img{
+	width: 480px;
+	height: 235px;
+}
+.bgDiv{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: whitesmoke;
+	opacity: 0.7;
+	width: 100%;
+	height: 235px;
+	opacity: 0;
+	transition: all 1s;
+}
+.goodsCover{
+	position:absolute;
+	top: 16px;
+	left: 36px;
+	width: 85%;
+	height:85% ;
+	background: white;
+	text-align: center;
+	border-radius: 5px;
+	opacity: 0;
+	transition: all 1s;
+}
+.goodsCover a{
+	display: inline-block;
+	margin-top: 14px;
+	margin-right: 28px;
+	color: #333;
+}
+.goodsCover span{
+	display: block;
+}
+.goodsCover img{
+	width: 82px;
+	height: 105px;
+	
+}
+.goodsBot{
+	padding-left: 20px;
+	padding-top: 10px;
+	border-top: 1px dotted black;
+	margin-top: 10px;
+	
+}
+.goodsBot a{
+	width: 100px;
+	height: 32px;
+	line-height: 30px;
+	margin: 0;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+.goodsBot a:first-child img{
+	width:74px;
+	height: 28px;
+	
+}
+.goodsBot a:nth-child(2) img{
+	width: 16px;
+	height: 14px;
+	margin-right: 5px;
+}
+.goodsBot a:nth-child(2){
+	border: 1px solid #ededed;
+	border-radius: 32px;
+}
+.goodsBot a:last-child{
+	width: 140px;
+	height: 28px;
+	border:1px solid #191919;
+	padding: 0;
+	border-radius: 3px;
+}
+.area_item:hover .bgDiv{
+	opacity: 0.6;
+}
+
+.area_item:hover .goodsCover{
+	opacity: 1;
+}
+.goodsBot a:last-child:hover{
+	background: #333;
+	color: white;
+}
+
+/*热销活动板块*/
+.brand_area .area_title{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 50px;
+	border-bottom: 1px solid black;
+}
+.brand_area .area_title img{
+	width: 203px;
+	height: 43px;
+	float: left;
+}
