@@ -1296,41 +1296,23 @@
 
 
 	$("#joinCar").addEventListener("click",function(){
-		$.ajax({
-		   type: "get",
-		   url: "goodsAndShoppingCart/addShoppingCart.php",
-		   data: "vipName="+$("#goodsName").html()+
-		   			"&goodsId="+$("#goodsId").html()+
-		   			"&goodsCount="+$("#count").html(),
-		   success: function(data){
-		     alert("data:"+data);
-		   }
-		});
+		let xhr = new XMLHttpRequest();
+		var data= "vipName="+$("#goodsName").innerHTML+
+	   					"&goodsId="+$("#goodsId").innerHTML+
+	   					"&goodsCount="+$("#count").innerHTML;
+		xhr.open("get","goodsAndShoppingCart/addShoppingCart.php?"+data,true);
+
+	   xhr.onreadystatechange = function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				if(xhr.responseText=="1"){
+					alert("加入成功");
+				}else{
+					alert("加入失败");		
+				}
+			} 
+		}		
+		xhr.send();
 	},false);
-	//加入购物车
-//	var count=0;
-//	$("#joinCar").onclick=function(){
-//		count+=parseInt($("#count").innerHTML);
-//		$("#receiveCount").innerHTML=count;
-//		if(count<=0){
-//			return;
-//		}
-//		var scrollTop=document.documentElement.scrollTop || document.body.scrollTop
-//		let startPoint = {x:$("#joinCar").offsetLeft,y:$("#joinCar").offsetTop};
-//		let endPoint = {x:$("#shopping").parentNode.offsetLeft,y:$("#shopping").offsetTop+scrollTop};
-//
-//		new Parabola({
-//			startPoint:startPoint,
-//			endPoint:endPoint,
-//			openDirection:'上',
-//			goodsObj:{
-//				imgpath:'img/goods1.jpg',
-//				width:36,
-//				height:36
-//			}
-//		});
-//	}
-	
 	//加减号改变数量
 	$("#add").onclick = function(){
 		//1、改数量

@@ -10,13 +10,7 @@
 function addCookie(key,value,dayCount,path){
 	var d = new Date();
 	d.setDate(d.getDate()+dayCount);	
-	/*
-	if(path!=undefined){
-		document.cookie=key+"="+value+";expires="+d.toGMTString()+";path="+path;	
-	}else{
-		document.cookie=key+"="+value+";expires="+d.toGMTString();
-	}
-	*/
+
 	var str = key+"="+escape(value)+";expires="+d.toGMTString();	
 	if(path!=undefined){
 		str+=";path="+path;	
